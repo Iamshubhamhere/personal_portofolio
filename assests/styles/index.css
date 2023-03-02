@@ -14,13 +14,32 @@
     --app-light-white: #f1f1f1;
   }
 
-  .container {
+/*- - - - - -  - - - - - - - - - - - - - */
+/* container - - - - - - - - - - - - - - */
+/* - - - - - - -- - - - - - - - - - - --*/
+
+.container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
 }
+
+
 html {
     scroll-behavior: smooth;
 }
+
+
+/*- - - - - -  - - - - - - - - - - - - - */
+/* Body - -- - - - - - - - - - - - - - - */
+/* - - - - - - -- - - - - - - - - - - --*/
+
+
+body {
+    background: transparent url(../images/background.jpg) center center / cover no-repeat;
+    min-height: 100vh;
+}
+
+
 /*- - - - - -  - - - - - - - - - - - - - */
 /* Header - - - - - - - - - - - - - - - */
 /* - - - - - - -- - - - - - - - - - - --*/
@@ -92,16 +111,16 @@ nav ul li+li {
     margin-left: 20px;
 }
 
-body {
-    background: transparent url(../images/background.jpg) center center / cover no-repeat;
-    height: 100vh;
-}
+/*- - - - - -  - - - - - - - - - - - - - */
+/* Main - - - - - - - - - - - - - - - - */
+/* - - - - - - -- - - - - - - - - - - --*/
 
 .text {
     color: #f1f1f1;
     position: absolute;
     margin-top: 70px;
     margin-left: 40px;
+   
 }
 .text p {
     font-size: 50px;
@@ -268,6 +287,9 @@ button:hover{
     margin-top: 22px;
 
 }
+/*- - - - - -  - - - - - - - - - - - - - */
+/* Footer -- - - - - - - - - - - - - - - */
+/* - - - - - - -- - - - - - - - - - - --*/
 
 footer{
     position: absolute;
@@ -314,3 +336,4 @@ footer .flex {
     font-size: 20px;
 
 }
+
