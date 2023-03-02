@@ -92,31 +92,46 @@ nav ul li+li {
 
 body {
     background: transparent url(../images/background.jpg) center center / cover no-repeat;
-    
-    
+    height: 100vh;
 }
+
 .text {
     color: #f1f1f1;
     position: absolute;
-    bottom: 8%;
+    margin-top: 300px;
+    margin-left: 40px;
 }
 .text p {
     font-size: 50px;
     font-weight: 600;
 }
 .text h1 {
-    font-size: 190px;
-    line-height: 160px;
+    font-size: 180px;
+    line-height: 180px;
     margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #f1f1f1;
+    background: url(../images/back.png) center center / cover;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 15s linear infinite;
+    
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
 }
 
 .text h3 {
     font-size: 40px;
     font-weight: 500;
+    color: var(--app-red);
 }
 .text span {
     color: #f1f1f1;
     position: absolute;
+    margin-top: 5px;
 }
 .text a {
     color: #fff;
@@ -124,5 +139,78 @@ body {
     padding: 10px 20px;
     margin-right: 20px;
     border: 2px solid #fff;
+    margin-top: 5px;
   
+}
+section {
+    height: 800px;
+   
+   }
+
+.about-me h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: 600;
+   
+}
+.about .main .img {
+    background: url(../images/main.jpeg) no-repeat;
+    margin-top: 0;
+    height: 600px;
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #000;
+}
+
+.about-me {
+    width: 550px;
+}
+.about .main {
+    display: flex;
+    align-items: cemter;
+   justify-content: space-around;
+}
+.about h2 
+{
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.about h4 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-top: 10px;
+} 
+.about p{
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 13px;
+}
+button {
+    background-color: var(--app-red);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid var(--app-red-hover);
+    cursor: pointer;
 }
